@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -52,6 +53,24 @@ namespace String_Metods
                 Console.WriteLine("31 - Задание 31");
                 Console.WriteLine("32 - Задание 32");
                 Console.WriteLine("33 - Задание 33");
+                Console.WriteLine("34 - Задание 34");
+                Console.WriteLine("35 - Задание 35");
+                Console.WriteLine("36 - Задание 36");
+                Console.WriteLine("37 - Задание 37");
+                Console.WriteLine("38 - Задание 38");
+                Console.WriteLine("39 - Задание 39");
+                Console.WriteLine("40 - Задание 40");
+                Console.WriteLine("41 - Задание 41");
+                Console.WriteLine("42 - Задание 42");
+                Console.WriteLine("43 - Задание 43");
+                Console.WriteLine("44 - Задание 44");
+                Console.WriteLine("45 - Задание 45");
+                Console.WriteLine("46 - Задание 46");
+                Console.WriteLine("47 - Задание 47");
+                Console.WriteLine("48 - Задание 48");
+                Console.WriteLine("49 - Задание 49");
+                Console.WriteLine("50 - Задание 50");
+                Console.WriteLine("51 - Задание 51");
                 Console.WriteLine("0 - Выход");
 
                 string choice = Console.ReadLine();
@@ -399,6 +418,140 @@ namespace String_Metods
                     Console.WriteLine(c << 3);
                     Console.WriteLine(~c);
                     Console.WriteLine(c ^ 15);
+                }
+                else if (choice == "37")
+                {
+                    int a = 10;
+                    Console.WriteLine(a += 5);
+                }
+                else if (choice == "38")
+                {
+                    int b = 20;
+                    b -= 4;
+                    b *= 2;
+                    b /= 3;
+                    Console.WriteLine(b);
+                }
+                else if (choice == "39")
+                {
+                    int c = 17;
+                    Console.WriteLine(c %= 5);
+                }
+                else if (choice == "40")
+                {
+                    int d = 5;
+                    Console.WriteLine(d &= 3);
+                    Console.WriteLine(d |= 2);
+                    Console.WriteLine(d ^= 1);
+                }
+                else if (choice == "41")
+                {
+                    int e = 8;
+                    Console.WriteLine(e <<= 2);
+                    Console.WriteLine(e >>= 1);
+                }
+                else if (choice == "42")
+                {
+                    int a = 25;
+                    double b = a;
+                }
+                else if (choice == "43")
+                {
+                    double num = 12.9;
+                    int b = (int)num;
+                }
+                else if (choice == "44")
+                {
+                    Console.WriteLine("Введи число с плавающей точкой");
+                    double a = Convert.ToDouble(Console.ReadLine());
+                }
+                else if (choice == "45")
+                {
+                    Console.WriteLine("Введи строку 123:");
+                    string a = Console.ReadLine();
+
+                    if (int.TryParse(a, out int b))
+                    {
+                        Console.WriteLine($"Вот ваше число, но в виде int: {b}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ты ввел неправильное число");
+                    }
+                }
+                else if (choice == "46")
+                {
+                    Console.WriteLine("Введи дробное число");
+                    double a = double.Parse(Console.ReadLine());
+                    int b = (int)a;
+                    char c = (char)b;
+                }
+                else if (choice == "46")
+                {
+                    Console.WriteLine("Введие число, и я скажу больше ли оно нуля или нет");
+                    int a = int.Parse(Console.ReadLine());
+                    if (a > 0)
+                    {
+                        Console.WriteLine("Ваше число больше нуля");
+                    }
+                    else if (a < 0)
+                    {
+                        Console.WriteLine("Ваше число меньше нуля");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ваше число равно нулю");
+                    }
+                }
+                else if (choice == "47")
+                {
+                    int a = 4;
+                    string b = (a % 2 == 0) ? "Положительное" : "Отрицательное";
+                    // ура, первая задача с тернарным оператором, оказывается это легче чем казалось
+                }
+                else if (choice == "48")
+                {
+                    Console.WriteLine("Введите первое число");
+                    int a = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Введите второе число");
+                    int b = int.Parse(Console.ReadLine());
+                    if (a < b)
+                    {
+                        Console.WriteLine($"{a} меньше чем {b}");
+                    }
+                    else if (a > b)
+                    {
+                        Console.WriteLine($"{a} больше чем {b}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Числа равны");
+                    }
+                }
+                else if (choice == "49")
+                {
+                    Console.WriteLine("Введите логин");
+                    string a = Console.ReadLine();
+                    Console.WriteLine("Введите пароль");
+                    string b = Console.ReadLine();
+                    if (a.Contains("admin") && b.Contains("1234"))
+                    {
+                        Console.WriteLine("Вход выполнен");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Пароль неверный");
+                    }
+                }
+                else if (choice == "50")
+                {
+                    Console.WriteLine("Введите температуру, и я скажу жарко или холодно");
+                    int a = int.Parse(Console.ReadLine());
+                    string b = (a >= 25) ? "Жарко" : "Холодно";
+                }
+                else if (choice == "51")
+                {
+
                 }
             }
         }
