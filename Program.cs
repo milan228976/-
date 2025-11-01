@@ -37,10 +37,25 @@ namespace String_Metods
                 Console.WriteLine("16 - Задание 16");
                 Console.WriteLine("17 - Задание 17");
                 Console.WriteLine("18 - Задание 18");
+                Console.WriteLine("19 - Задание 19");
+                Console.WriteLine("20 - Задание 20");
+                Console.WriteLine("21 - Задание 21");
+                Console.WriteLine("22 - Задание 22");
+                Console.WriteLine("23 - Задание 23");
+                Console.WriteLine("24 - Задание 24");
+                Console.WriteLine("25 - Задание 25");
+                Console.WriteLine("26 - Задание 26");
+                Console.WriteLine("27 - Задание 27");
+                Console.WriteLine("28 - Задание 28");
+                Console.WriteLine("29 - Задание 29");
+                Console.WriteLine("30 - Задание 30");
+                Console.WriteLine("31 - Задание 31");
+                Console.WriteLine("32 - Задание 32");
+                Console.WriteLine("33 - Задание 33");
                 Console.WriteLine("0 - Выход");
 
                 string choice = Console.ReadLine();
-                
+
                 if (choice == "1")
                 {
                     Console.WriteLine("Введите первое слово");
@@ -55,7 +70,7 @@ namespace String_Metods
                     Console.WriteLine("1 - верхний");
                     Console.WriteLine("2 - нижний");
                     string aro = Console.ReadLine();
-                        if (aro == "1")
+                    if (aro == "1")
                     {
                         Console.WriteLine(word.ToUpper());
                     }
@@ -113,8 +128,8 @@ namespace String_Metods
                 else if (choice == "7")
                 {
                     Console.WriteLine("Введите ссылку которая начинается на /https а заканчивается на .com");
-                        string word = Console.ReadLine();
-                    if (word.StartsWith("/https") && word.EndsWith(".com")) 
+                    string word = Console.ReadLine();
+                    if (word.StartsWith("/https") && word.EndsWith(".com"))
                     {
                         Console.WriteLine("Ваша ссылка правильная");
                     }
@@ -134,19 +149,19 @@ namespace String_Metods
 
                     string word2 = Console.ReadLine();
                     if (word2 == "1")
-                        Console.WriteLine(word.Trim( ));
+                        Console.WriteLine(word.Trim());
                     else
                     {
-                        Console.WriteLine(word.TrimStart().TrimEnd( ));
+                        Console.WriteLine(word.TrimStart().TrimEnd());
                     }
                 }
                 else if (choice == "9")
                 {
                     Console.WriteLine("Введите предложение");
-                        string word = Console.ReadLine();
+                    string word = Console.ReadLine();
                     Console.WriteLine(word.Split(' '));
                     string[] words = word.Split(' ');
-                    foreach (string item in words )
+                    foreach (string item in words)
                     {
                         Console.WriteLine(item);
                     }
@@ -158,7 +173,7 @@ namespace String_Metods
                     string result = String.Join(" ", word);
                     Console.WriteLine(result);
                 }
-                else if(choice == "11")
+                else if (choice == "11")
                 {
                     Console.WriteLine("Введите строку, позицию символа и текст который хотите вставить поочередно");
                     string word = Console.ReadLine();
@@ -186,7 +201,7 @@ namespace String_Metods
                     Console.WriteLine("Введите первую строку");
                     string word = Console.ReadLine();
                     Console.WriteLine("Введите вторую строку");
-                        string word2 = Console.ReadLine();
+                    string word2 = Console.ReadLine();
                     Console.WriteLine(string.Compare(word, word2));
                 }
                 else if (choice == "14")
@@ -241,6 +256,118 @@ namespace String_Metods
                 {
                     exit = true;
                     break;
+                }
+                else if (choice == "19")
+                {
+                    Console.WriteLine("введите свое имя");
+                    string name = Console.ReadLine();
+                    Console.WriteLine($"Привет, {name}!");
+                }
+                else if (choice == "20")
+                {
+                    Console.WriteLine("Введите первое число");
+                    string a = Console.ReadLine();
+                    int a1 = int.Parse(a);
+                    Console.WriteLine("Введите второе число");
+                    string b = Console.ReadLine();
+                    int b1 = int.Parse(b);
+                    int c = a1 + b1;
+                    Console.WriteLine(c);
+                }
+                else if (choice == "21")
+                {
+                    Console.WriteLine("Введи число, и я скажу четное оно или нет");
+                    int a = int.Parse(Console.ReadLine());
+                    if (a % 2 == 0)
+                    {
+                        Console.WriteLine("Число четное");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Число нечетное");
+                    }
+                }
+                else if (choice == "22")
+                {
+                    string name = "Михаил";
+                    byte age = 18;
+                    byte height = 176;
+                    Console.WriteLine($"Меня зовут {name}, мне {age} лет, и мой рост {height}см");
+                }
+                else if (choice == "23")
+                {
+                    byte a = 50;
+                    byte b = 55;
+                    Console.WriteLine(a + b);
+                    Console.WriteLine(a - b);
+                    Console.WriteLine(a / b);
+                    Console.WriteLine(a * b);
+                }
+                else if (choice == "24")
+                {
+                    Console.WriteLine("введите радиус");
+                    int r = int.Parse(Console.ReadLine());
+                    const double PI = 3.14;
+                    double S = PI * r * r;
+                    Console.WriteLine($"Площадь круга равна {S}");
+                }
+                else if (choice == "25")
+                {
+                    int temperature = 25;
+                    Console.WriteLine((temperature + 5) / 2);
+                }
+                else if (choice == "26")
+                {
+                    Console.WriteLine("Введите количество долларов, чтобы перевести их в рубли");
+                    double USD = double.Parse(Console.ReadLine());
+                    const double USD_TO_RUB = 97.5;
+                    double result = USD * USD_TO_RUB;
+                    Console.WriteLine($"Ваш результат: {result}");
+                }
+                else if (choice == "27")
+                {
+                    int a = 25;
+                    double b = 25.2;
+                    char c = 'a';
+                    string d = "aboba";
+                    bool e = false;
+                    bool f = true;
+                    Console.WriteLine($"a = {a}, b = {b}, c = {c}, d = {d}, e = {e}, f = {f}");
+                }
+                else if (choice == "28")
+                {
+                    int a = 10;
+                    int b = 3;
+                    Console.WriteLine(a + b);
+                    Console.WriteLine(a * b);
+                    Console.WriteLine(a % b);
+                    double c = (double)a / b;
+                    Console.WriteLine(c);
+                }
+                else if (choice == "29")
+                {
+                    char letter = 'A';
+                    int ASC = (int)letter;
+                    Console.WriteLine(ASC);
+                }
+                else if (choice == "30")
+                {
+                    int a = 1;
+                    int b = 0x1a;
+                    int c = 0b1011;
+                    Console.WriteLine(a + b + c);
+                }
+                else if (choice == "31")
+                {
+                    int a = 5;
+                    double b = 2.5;
+                    char c = 'A';
+                    bool flag = true;
+                    Console.WriteLine(a * b + c + (flag ? 10 : 0));
+                }
+                else if (choice == "32")
+                {
+
                 }
             }
         }
