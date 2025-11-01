@@ -367,7 +367,38 @@ namespace String_Metods
                 }
                 else if (choice == "32")
                 {
-
+                    int a = 5;
+                    int b = 6;
+                    Console.WriteLine(a & b);
+                    Console.WriteLine(a | b);
+                }
+                else if (choice == "33")
+                {
+                    int a = 5;
+                    int b = 6;
+                    Console.WriteLine(a ^ b);
+                }
+                else if (choice == "34")
+                {
+                    int a = 5;
+                    Console.WriteLine(~a);
+                }
+                else if (choice == "35")
+                {
+                    int a = 5;
+                    Console.WriteLine(a << 2);
+                    Console.WriteLine(a >> 2);
+                }
+                else if (choice == "36")
+                {
+                    Console.WriteLine("введите число");
+                    int a = int.Parse(Console.ReadLine());
+                    string b = Convert.ToString(a, 2);
+                    Console.WriteLine(b);
+                    int c = int.Parse(b);
+                    Console.WriteLine(c << 3);
+                    Console.WriteLine(~c);
+                    Console.WriteLine(c ^ 15);
                 }
             }
         }
