@@ -71,6 +71,11 @@ namespace String_Metods
                 Console.WriteLine("49 - Задание 49");
                 Console.WriteLine("50 - Задание 50");
                 Console.WriteLine("51 - Задание 51");
+                Console.WriteLine("52 - Задание 52");
+                Console.WriteLine("53 - Задание 53");
+                Console.WriteLine("54 - Задание 54");
+                Console.WriteLine("55 - Задание 55");
+                Console.WriteLine("56 - Задание 56");
                 Console.WriteLine("0 - Выход");
 
                 string choice = Console.ReadLine();
@@ -569,6 +574,50 @@ namespace String_Metods
                 {
                     Console.WriteLine("Программа завершится когда вы введете 0");
                     int a = int.Parse(Console.ReadLine());
+
+                }
+                else if (choice == "53")
+                {
+                    for (int i = 1; i <= 50; i++)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            Console.WriteLine(i);
+                        }
+                    }
+                }
+                else if (choice == "54")
+                {
+                    for (int i = 1; i <= 10; i++)
+                    {
+                        for (int a = 1; a <= 10; a++)
+                        {
+                            int b = a * i;
+                            Console.WriteLine($"{a} X {i} = {b}");
+                        }
+                    }
+                    // таблица умножения йоу
+                }
+                else if (choice == "55")
+                {
+                    int[] a = { 1, 2, 3, 4, 5 };
+                    foreach (int i in a)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+                else if (choice == "55")
+                {
+                    int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+                    int sum = 0;
+                    for (int i = 0; i < a.Length; i++)  
+                    {
+                        sum += a[i];
+                    }
+                    Console.WriteLine(sum);
+                }
+                else if (choice == "56")
+                {
 
                 }
             }
