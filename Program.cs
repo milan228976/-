@@ -551,6 +551,24 @@ namespace String_Metods
                 }
                 else if (choice == "51")
                 {
+                    Console.WriteLine("Введите число n");
+                    string a = Console.ReadLine();
+                    if (int.TryParse(a, out int b))
+                    {
+                        for (int i = 1; i <= b; i++)
+                        {
+                            Console.WriteLine(i);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Вы ввели неправильное число");
+                    }
+                }
+                else if (choice == "52")
+                {
+                    Console.WriteLine("Программа завершится когда вы введете 0");
+                    int a = int.Parse(Console.ReadLine());
 
                 }
             }
